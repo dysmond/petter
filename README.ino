@@ -14,7 +14,7 @@ void loop() {
 // put your main code here, to run repeatedly: 
 light_data=analogRead(light_pin); 
 Serial.println(light_data); 
-if(light_data<200) 
+if(light_data<900) 
 { 
 buzzer_speak = true;//蜂鸣器使能值为真，即开启蜂鸣器 
 tone(buzzer_pin, i);//产生输出给压电扬声器的频率为i，前一个参数为连接到压电扬声器的数字引脚，后一个参数为以Hz为单位的频率值， 
